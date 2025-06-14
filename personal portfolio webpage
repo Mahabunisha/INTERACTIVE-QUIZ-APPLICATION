@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Developer Portfolio</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #007acc;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #007acc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgb(0 0 0 / 0.15);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #007acc;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .project-card a {
+      display: inline-block;
+      text-decoration: none;
+      background: #007acc;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .project-card a:hover {
+      background: #005f99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive typography */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section {
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jane Developer</h1>
+    <p>Frontend Developer | React Enthusiast | UI/UX Lover</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio website built with React and styled-components showcasing my projects and skills.</p>
+        <a href="https://github.com/janedev/portfolio" target="_blank" rel="noopener noreferrer">View Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Task Manager App</h3>
+        <p>A task management app with drag-and-drop functionality using React DnD and local storage for persistence.</p>
+        <a href="https://github.com/janedev/task-manager" target="_blank" rel="noopener noreferrer">View Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Weather Dashboard</h3>
+        <p>A weather forecast dashboard that fetches real-time data from OpenWeatherMap API and displays it elegantly.</p>
+        <a href="https://github.com/janedev/weather-dashboard" target="_blank" rel="noopener noreferrer">View Code</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:jane.developer@example.com">jane.developer@example.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Jane Developer. All rights reserved.
+  </footer>
+
+</body>
+</html>
